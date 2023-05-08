@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hello(){
+            document.write("click event in javascript")
+        }
+        // hello();
+        function double_click(){
+            alert("double click event in javascript");
+        }
+        function right_click(){
+            alert("Right click event in javascript")
+        }
+             function mouse_hover(){
+            alert(" mouse hover event in javascript");
+        }
+        function mouse_out(){
+            alert("mouse out event in javascript")
+        }
+         function mouse_down(){
+            alert(" mouse down event in javascript");
+        }
+        function mouse_up(){
+            alert("mouse up event in javascript")
+        }
+        function keypress(){
+            alert("onkeypress event in javascript")
+        }
+    </script>
+</head>
+<body onkeypress="keypress()">
+    <button onclick="hello()">click</button>
+    <br>
+    <button ondblclick="double_click()">double click</button>
+     <br>
+    <!-- <button ondblclick="double_click()">double click</button> -->
+    <button oncontextmenu="right_click()">right click</button>
+    <br>
+    <button onmouseenter="right_click()">mouse_in</button>
+    <br>
+    <button onmouseout="right_click()">mouse_out</button>
+    <br>
+    <button onmousedown="mouse_down()">mouse_down</button>
+    <br>
+    <button onmouseup="mouse_up()">mouse_up</button>
+    
+</body>
+</html>

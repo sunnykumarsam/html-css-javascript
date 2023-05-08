@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+        <style>
+            .xyz{
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class='xyz'>Hello Incapp</h1>
+        <h1>hi Incapp</h1>
+        <p class='xyz'>Hello INDIA</p>
+        <p>Hi INDIA</p>
+        <h1>OK Incapp</h1>
+        <h2>Ok INDIA</h2>
+        <button onclick="f1()">count h1</button>
+        <button onclick="f2()">count xyz class</button>
+    </body>
+    <script>
+        function f1(){
+            var x=document.getElementsByTagName("h1");
+            x[0].innerHTML="fhdfdhthrthrthb hr t";
+            alert("Total H1: "+x.length);
+        }
+        function f2(){
+            var x=document.getElementsByClassName("xyz");
+            x[0].style.backgroundColor="yellow";
+            alert("Total xyz used in: "+x.length+" elements");
+        }
+    </script>
+</html>

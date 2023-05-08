@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body onresize="f1()">
+        <h1>Get Browser Width and Height example:</h1>
+        <p id="para"></p>
+    </body>
+    <script>
+        function f1(){
+            var p=document.getElementById("para");
+            var w= window.innerWidth;
+            var h= window.innerHeight;
+            p.innerHTML=w+":"+h
+        }
+    </script>
+</html>

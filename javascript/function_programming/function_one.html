@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            function
+
+        </title>
+    </head>
+    <body>
+        <script>
+            function hello(){
+                // var i=0
+                // while (i<10)
+                document.write("This is my first function page in javascript <br>")
+                    // i++;
+            }
+            hello();
+
+            // function with parameter
+            function sum(a,b){
+                document.write("The sum of two numberis ",a+b +" <br>");
+              
+
+
+            }
+            function name(fname,lname){
+                document.write("hey " +fname+" " +lname+"<br>");
+            }
+            name("sunny", "kumar");
+            sum(10,20);
+
+            // function with return value
+            function subject(math,eng,sci){
+                var s=math+eng+sci;
+                return s;
+
+            }
+            function percentage(percente){
+                var per=percente/300*100;
+                document.write(per);
+            }
+            var total=subject(65,75,95);
+            percentage(total);
+            
+    
+         
+        </script>
+        
+    </body>
+</html>

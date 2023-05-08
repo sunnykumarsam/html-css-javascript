@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <p id='para'></p>
+        <button onclick="f1()">click me</button>
+    </body>
+    <script>
+        function f1(){
+            var x=document.getElementById('para');
+            
+            var d = new Date();
+            var d = new Date(2025, 11, 23, 3,43, 21);
+            var d = new Date().getFullYear();
+            var d = new Date().getMonth();
+            var d = new Date().getDate();
+            var d = new Date().getHours();
+            var d = new Date().getSeconds();
+            var d = new Date().getMinutes();
+            var d = new Date().getDay();
+            x.innerHTML=d;
+
+        }
+    </script>
+</html>

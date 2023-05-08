@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>focus Event example:</h1>
+        <input id='xyz' type="text" onfocus="f1()" onblur="f2()" />
+        <input type="text"/>
+        <p id="para"></p>
+    </body>
+    <script>
+        function f1(){
+            var x=document.getElementById("para");
+            x.innerHTML="hi incapp";
+            var y=document.getElementById("xyz");
+            y.style.background="red";
+            y.style.height="55px";
+            // y.value="hi incapp";
+        }
+        function f2(){
+            var x=document.getElementById("para");
+            x.innerHTML="bye incapp";
+            var y=document.getElementById("xyz");
+            y.style.background="blue";
+            y.style.height="25px";
+        }
+    </script>
+</html>

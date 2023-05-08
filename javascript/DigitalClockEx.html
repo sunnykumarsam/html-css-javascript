@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>My Digital Clock</h1>
+        <p id="para"></p>
+    </body>
+    <script>
+        
+        var x=document.getElementById("para");
+        f1();
+        setInterval(f1, 1000);
+        function f1(){
+            var d=new Date();
+            var h=d.getHours();
+            var m=d.getMinutes();
+            var s=d.getSeconds();
+            x.innerHTML=h+":"+m+":"+s;
+        }
+    </script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi_array</title>
+</head>
+<script>
+    var arry=[["Sunny,23,Male,MCA"],
+              ["Rohit,22,Male,MCA"],
+              ["Suraj,24,Male,BCA"],
+              ["Vishal,21,Male,B.com"]
+
+
+];
+// document.write(arry[0][0]);
+//    document.write(arry.length);
+   document.write("<table border='1px' cellspacing='0'>");
+    for(var a=0;a<arry.length;a++){
+        document.write("<tr>");
+       for (var b=0;b<arry[a].length;b++){
+           document.write("<td>"+arry[a][b]+"</td>");
+
+    }
+    document.write("</tr>");
+    }
+    document.write("</table>");
+
+    
+</script>
+<body>
+    
+</body>
+</html>
