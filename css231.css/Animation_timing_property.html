@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animation</title>
+    <style>
+        .box_container{
+            width:500px;
+            height: 250px;
+            border: 4px solid brown;
+            position: relative;
+        }
+        .box1{
+            width:100px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: aqua;
+            position: absolute;
+            animation-name:box1;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            animation-timing-function:linear;
+        }
+        .box2{
+            width:100px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: red;
+            position: absolute;
+            animation-name:box2;
+            animation-duration: 5s;
+            animation-timing-function:ease;
+
+        }
+        .box3{
+            width:100px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: blue;
+            position: absolute;
+            animation-name:box3;
+            animation-duration: 5s;
+            animation-timing-function:ease-in;
+        }
+        .box4{
+            width:100px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: pink;
+            position: absolute;
+            animation-name:box1;
+            animation-duration: 5s;
+            animation-timing-function:ease-out;
+
+        }
+        .box5{
+            width:100px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: yellow;
+            position: absolute;
+            animation-name:box5 ;
+            animation-duration: 5s;
+            animation-timing-function:ease-in-out;
+        }
+        @keyframes box1{
+            from{
+                left:0px;
+            }
+            to{
+                left:400px;
+            }
+        }
+        @keyframes box2{
+            from{
+                left:0px;
+            }
+            to{
+                left:400px;
+            }
+        }   
+         @keyframes box3{
+            from{
+                left:0px;
+            }
+            to{
+                left:400px;
+            }
+        }
+        @keyframes box4 {
+            from{
+                left:0px;
+            }
+            to{
+                left:400px;
+            }
+        }
+        @keyframes box5{
+            from{
+                left:0px;
+            }
+            to{
+                left:400px;
+            }
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="box_container">
+    <div class="box1"><h2>liner</h2> </div>
+    <div class="box2"><h2>ease</h2></div>
+    <div class="box3"><h2>ease in</h2></div>
+    <div class="box4"><h2>ease out</h2></div>
+    <div class="box5"><h2>ease-in-out</h2></div>
+
+    </div>
+  </body>
+</html>
