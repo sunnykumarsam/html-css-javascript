@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOVER</title>
+        <style>
+            div{
+                height: 50px;
+                width: 75px;
+                position: absolute;
+                top: 20px;
+                left:20;
+                background-color: aqua;
+                transform:rotate(deg80);
+
+                /* transition:  1s ease-in-out; */
+                /* transition:  1s ease-in-out;  */
+                transition: 3s steps(4,end);
+                padding: 2px;
+                margin: 2px;
+                align-items: center;
+            }
+            div:hover{
+                width: 400px;
+                height: 400px;
+                /* this transform is used to grown the box as well as shift toward the right */
+                transform:scale(1.5) translate(150px);
+
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <p>Hover</p>
+        </div>
+    </body>
+</html>
