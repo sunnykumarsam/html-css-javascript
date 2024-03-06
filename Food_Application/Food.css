@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .information {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  h3 {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    margin: 5px 0;
+    color: #dc3545;
+  }
+  
+  .required::after {
+    content: "*";
+    color: #dc3545;
+    margin-left: 5px;
+  }
+  
+  #selected_food_container {
+    margin-top: 10px;
+  }
+  
+  #selected_food_container div {
+    margin-bottom: 5px;
+  }
+  
+  
+  #selected_food_container button {
+    margin-right: 10px; 
+  }
+  
+  #captcha {
+    width: calc(100% - 30px);
+  }
+  
+  h4 {
+    margin-top: 10px;
+  }
+  
+  h4 img {
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  #submit_button_container {
+    text-align: center;
+    margin-top: 20px;
+  }

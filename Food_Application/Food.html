@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="food.css">
+  <title>Food Order App</title>
+  <script src="food.js"></script>
+</head>
+<body>
+  <div class="information">
+    <form>
+      <h2>Food Order App</h2>
+      <label class="required" for="fname">First Name</label>
+      <input type="text" id="fname" oninput="firstNameValidate()" name="fname" ><br>
+      <p id="message1"></p>
+
+      <label class="required" for="lname">Last Name</label>
+      <input type="text" id="lname" oninput="lastNameValidate()" name="lname" ><br>
+      <p id="message2"></p>
+
+
+      <div class="mobileNoValidation">
+        <label class="required" for="mob_no">Mobile No:</label>
+        <input type="text" id="mob_no" name="mob_no" onchange='mobileValidate()'><br>
+        <p id="mess"></p>
+      </div>
+
+      <label class="required" for="address">Address:</label>
+      <textarea name="address" id="address" cols="52" rows="5" oninput="addressValidate()"></textarea>
+      <!-- <input type="text" id="address" oninput="addressValidate()" name="address" ><br> -->
+      <p id="add"></p>
+
+      <div class="emailValidation">
+        <label class="required" for="email">Email:</label>
+        <input type="text" onchange="validateEmail()" id="email" name="email" ><br><br>
+        <span id="showmsg"></span>
+      </div>
+
+      <label for="food_item">Food Item:</label>
+      <input type="text" id="food_item" name="food_item"><button type="button" onclick="searchAndAddFood()">Add</button><br>
+
+      <h3> Food Items in Cart</h3>
+      <div id="selected_food_container">
+        <!-- Selected food items will be added here dynamically -->
+      </div>
+
+      <label>Captcha:</label>
+      <input type="text" id="captcha" name="captcha" >
+      <input type="text" id="textinput" name="captcha"><br>
+
+      <h4>Captcha Not Visible <img src="refresh.png" onclick="cap()"></h4>
+
+
+      <div id="submit_button_container">
+        <!-- Error message will be added here -->
+        <button onclick="formSubmittedSuccessfully()" class="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
